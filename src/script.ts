@@ -45,7 +45,7 @@ class Vehicle extends Owner implements VechicleInt{
 }
 
 
-const type = document.getElementById('type') as HTMLInputElement
+const type = document.getElementById('vehicle-type') as HTMLInputElement
 const brand = document.getElementById('brand') as HTMLInputElement
 const model = document.getElementById('model') as HTMLInputElement
 const year = document.getElementById('year') as HTMLInputElement
@@ -59,10 +59,11 @@ const form = document.getElementById('form') as HTMLElement
 
 const vehicleList: object[] = []
 
-const newVehicle = new Vehicle(type.value, brand.value, model.value, parseInt(year.value), color.value, parseInt(cilinders.value), fullName.value, parseInt(age.value), parseInt(licenseNumber.value))
-
 const addVehicle = () =>{
+    const newVehicle = new Vehicle(type.value, brand.value, model.value, parseInt(year.value), color.value, parseInt(cilinders.value), fullName.value, parseInt(age.value), parseInt(licenseNumber.value))
+
     vehicleList.push(newVehicle)
+
     return console.log(vehicleList)
 }
 

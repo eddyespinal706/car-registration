@@ -17,7 +17,7 @@ class Vehicle extends Owner {
         this.cilinders = cilinders;
     }
 }
-const type = document.getElementById('type');
+const type = document.getElementById('vehicle-type');
 const brand = document.getElementById('brand');
 const model = document.getElementById('model');
 const year = document.getElementById('year');
@@ -28,8 +28,8 @@ const age = document.getElementById('age');
 const licenseNumber = document.getElementById('licenseNumber');
 const form = document.getElementById('form');
 const vehicleList = [];
-const newVehicle = new Vehicle(type.value, brand.value, model.value, parseInt(year.value), color.value, parseInt(cilinders.value), fullName.value, parseInt(age.value), parseInt(licenseNumber.value));
 const addVehicle = () => {
+    const newVehicle = new Vehicle(type.value, brand.value, model.value, parseInt(year.value), color.value, parseInt(cilinders.value), fullName.value, parseInt(age.value), parseInt(licenseNumber.value));
     vehicleList.push(newVehicle);
     return console.log(vehicleList);
 };
