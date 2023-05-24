@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Car Registration</title>
+</head>
+<body>
+    <div class="app-container">
+        <h1>Car Registration</h1>
+        <form id="form" class="app-form">
+            <h2>Vehicle Information:</h2>
+            <hr><br>
+            <div class="vehicle-info-container">
+                <label>Type: </label>
+                <select name="vehicle-type" id="vehicle-type">
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="compact">Compact</option>
+                </select>
+                <label>Brand: </label>
+                <input type="text" name="brand" id="brand">
+                <label>Model: </label>
+                <input type="text" name="model" id="model">
+                <br><br>
+                <label>Year: </label>
+                <input type="number" name="year" id="year">
+                <label>Color: </label>
+                <input type="text" name="color" id="color">
+                <label>Cilinders: </label>
+                <input type="number" name="cilinders" id="cilinders">
+            </div>
+            <br><br>
+            <h2>Owner information: </h2>
+            <hr><br>
+            <div class="owner-info-contai">
+                <label>Full Name: </label>
+                <input type="text" name="fullName" id="fullName">
+                <label>Age: </label>
+                <input type="number" name="age" id="age">
+                <label>License Number: </label>
+                <input type="number" name="licenseNumber" id="licenseNumber">
+            </div>
+            <br><br>
+            <input class="form-btn" type="submit" value="Complete Registration">
+        </form>
+    </div>
+    <script src="./dist/script.js"></script>
+</body>
+</html>

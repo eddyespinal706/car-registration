@@ -1,0 +1,12 @@
+body{
+    background-color: gray;
+    color:navy;
+}
+
+.form-btn{
+    height: 50px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
